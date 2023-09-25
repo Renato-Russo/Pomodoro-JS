@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Timer Pomodoro</title>
+</head>
+<body class="bg-dark text-white">
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="text-center">
+                    <h1 class="display-4" id="nome">Timer Pomodoro</h1>
+                </div>
+                <div class="timer-container text-center">
+                    <h1 class="display-1 timer" id="timer">25:00</h1>
+                    <div class="controls mt-4">
+                        <button id="start" class="btn btn-primary">Iniciar</button>
+                        <button id="pause" class="btn btn-warning">Pausar</button>
+                        <button id="reset" class="btn btn-danger">Reiniciar</button>
+                    </div>
+                </div>
+                <div class="settings-container mt-4">
+                    <h2 class="mb-3">Configurações</h2>
+                    <div class="form-group">
+                        <label for="activity-time">Tempo de Atividade (minutos):</label>
+                        <input type="number" id="activity-time" class="form-control" min="1" step="1" value="25">
+                    </div>
+                    <div class="form-group">
+                        <label for="break-time">Tempo de Descanso (minutos):</label>
+                        <input type="number" id="break-time" class="form-control" min="1" step="1" value="5">
+                    </div>
+                    <div class="form-group">
+                        <label for="repeat-count">Número de Repetições:</label>
+                        <input type="number" id="repeat-count" class="form-control" min="1" step="1" value="4">
+                    </div>
+                </div>
+                <div class="notes-container mt-4">
+                    <h2 class="mb-3">Bloco de Notas</h2>
+                    <textarea id="note-text" class="form-control" rows="5"></textarea>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
